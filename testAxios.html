@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>testAxios</title>
+</head>
+<body>
+    
+</body>
+<script src="e:\js作业\自己尝试\CNode论坛\bbs\node_modules\axios\dist\axios.js"></script>
+<script>
+    axios.get('/api/v1/topics').then((data)=>{
+        console.log(data)
+    }).catch(()=>{
+        console.log('失败')
+    })
+    axios.get('/v2/book/search',{
+        params:{
+            q:'javascript'
+        }
+    }).then((data)=>{
+        console.log(data)
+    }).catch(()=>{
+        console.log('失败')
+    })
+    // jsonp({
+    //     url:'https://cnodejs.org/api/v1/topic',
+    //     query:{
+    //         page:1,
+    //     }
+    // }).then((data)=>{
+    //     console.log(data)
+    // }).catch(()=>{
+    //     console.log('失败')
+    // })
+
+    // function jsonp(props ={}){
+    // let{param='callback',url,query={},timeout=10}=props;
+    // return new Promise((resolve,reject)=>{
+    //     var script = document.createElement('script');
+    //     var callBackName = query[param] = `__jsonp__${Date.now()}`;
+    //     window[callBackName] = function(data){
+    //         resolve(data);
+    //         document.body.removeChild(script);
+    //         clearTimeout(jsonp.timer);
+    //         delete window[callBackName];
+    //     }
+    //     let str = [];
+    //     for(let key in query){
+    //         str.push(encodeURIComponent(key) + '=' + encodeURIComponent(query[key]))
+    //     }
+    //     url += '?'+str.join('&');
+    //     script.src = url;
+    //     document.body.appendChild(script);
+    //     jsonp.timer = setTimeout(function() {
+    //         reject();
+    //         document.body.removeChild(script);
+    //         delete window[callBackName];
+    //     }, timeout*1000);
+    // })
+    // }
+</script>
+</html>
