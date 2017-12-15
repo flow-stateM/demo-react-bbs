@@ -7,7 +7,5 @@
 //     return state ;
 // }
 // export function changeSearchValue(e){
-//     console.log(e.target.value);
-//     const value = e.target.value;
 //     return {type:CHANGE}
 // }

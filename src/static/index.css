@@ -76,3 +76,49 @@ input {
 .navBox .navContainer .searchInp.active {
   background-color: #fff;
 }
+.mainContainer {
+  background-color: #e1e1e1;
+  padding: 15px 0 ;
+  min-width: 1000px;
+}
+.main {
+  max-width: 980px;
+  margin: 0 auto;
+}
+.main .HomeList {
+  float: left;
+  width: 655px;
+  margin-right: 15px;
+}
+.main .HomeList .HomeListHeader {
+  background-color: #f6f6f6;
+  border-radius: 5px 5px 0 0 ;
+  width: 100%;
+  height: 40px;
+  box-sizing: border-box;
+  padding: 10px;
+  line-height: 20px;
+}
+.main .Adv {
+  float: left;
+  width: 290px;
+  background-color: darkcyan;
+  height: 500px;
+}
+.HomeListHeaderA {
+  width: 35px;
+  height: 25px;
+  color: #80bd01;
+  border-radius: 5px;
+  padding: 3px 3px;
+  margin: 0 10px;
+  font-size: 14px;
+}
+.HomeListHeaderA.active {
+  background-color: #80bd01;
+  color: #fff;
+}
+.HomeListContent {
+  background-color: #fff;
+  min-height: 500px;
+}

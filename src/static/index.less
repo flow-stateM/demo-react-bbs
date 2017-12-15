@@ -76,3 +76,56 @@ input{
         }
     }
 }
+
+//main 内容区  HomeList、登陆和ADV广告区
+.mainContainer{
+    background-color: #e1e1e1;
+    padding: 15px 0 ;
+    min-width: 1000px;
+}
+.main{
+    max-width: 980px;
+    margin: 0 auto;
+    .HomeList{
+        .fl;
+        width: 655px;
+        margin-right: 15px;
+        .HomeListHeader{
+            background-color: #f6f6f6;
+            border-radius: 5px 5px 0 0 ;
+            width: 100%;
+            height: 40px;
+            box-sizing: border-box;
+            padding: 10px;
+            line-height: 20px;
+        }
+    }
+    .Adv{
+        .fl;
+        width: 290px;
+        background-color: darkcyan;
+        height: 500px;
+    }
+}
+
+.HomeListHeaderA{
+    // display: inline-block;
+    width: 35px;
+    height: 25px;
+    color:  #80bd01;
+    border-radius: 5px;
+    padding: 3px 3px;
+    margin: 0 10px;
+    font-size: 14px;
+    &.active{
+        background-color: #80bd01;
+        color: #fff;
+    }
+}
+.HomeListContent{
+    background-color: #fff;
+    min-height: 500px;
+    // .error{
+    //     font-size: 30px;
+    // }
+}
