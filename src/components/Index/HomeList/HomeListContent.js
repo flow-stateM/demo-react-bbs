@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import {connect} from 'react-redux';
-import {matchFn} from '../../../redux/index.redux'
+import {matchFn} from '../../../redux/match.redux';
+import {ListItem} from './ListItem'
 
 @connect(
     state => state.matchReducer,
@@ -10,14 +11,18 @@ import {matchFn} from '../../../redux/index.redux'
 
      class HomeListContent extends Component {
         componentWillMount(){
-            this.props.matchFn(this.props.match.url.substring(1))
+            this.props.matchFn(this.props.match.url.substring(1));
         }
+
+
+
         render(){
-            // this.props.matchFn(this.props.match.url.substring(1))
-            // if(!this.props.fail) return(<div className="error"></div>)
-            console.log(this.props);
-            // this.props.matchFn(this.props.match.url.substring(1))
+            console.log(this.props.data?this.props.data.data.data:0);
+            const jsxData =  this.props.data?this.props.data.data.data.map((item,index)=>{
+                return <ListItem {...item} key={item.id} />
+                }):null
             return(<div className="HomeListContent">
+                {jsxData}
             </div>)
         }
     }
