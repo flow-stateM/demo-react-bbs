@@ -19,6 +19,9 @@ input {
   background-color: transparent;
   border: none;
 }
+dfn {
+  font-style: normal;
+}
 .fl {
   float: left;
 }
@@ -79,10 +82,11 @@ input {
 .mainContainer {
   background-color: #e1e1e1;
   padding: 15px 0 ;
-  min-width: 1000px;
+  min-width: 1080px;
 }
 .main {
-  max-width: 980px;
+  width: 90%;
+  min-width: 980px;
   margin: 0 auto;
 }
 .main .HomeList {
@@ -123,14 +127,58 @@ input {
   min-height: 500px;
 }
 .HomeListContent .ListItem {
-  border-bottom: 1px solid black;
+  border-bottom: 1px solid #f0f0f0;
   width: 100%;
   height: 50px;
   line-height: 50px;
+  box-sizing: border-box;
+  padding-right: 10px;
+}
+.HomeListContent .ListItem .listNum {
+  display: inline-block;
+  float: left;
+  vertical-align: top;
+  line-height: 50px;
+  text-align: center;
+  width: 100px;
+  overflow: hidden;
+  white-space: nowrap;
+  height: 50px;
+}
+.HomeListContent .ListItem .listNum span {
+  float: none;
+}
+.HomeListContent .ListItem img {
+  width: 30px;
+  height: 30px;
+  border-radius: 3px;
+  border: none;
+  vertical-align: middle;
+  margin-left: 10px;
+  margin-right: 10px;
 }
 .HomeListContent .ListItem span {
   display: inline-block;
   height: 50px;
   line-height: 50px;
-  font-size: 20px;
+  font-size: 14px;
+  vertical-align: top;
+  float: left;
+  cursor: default;
+}
+.HomeListContent .ListItem .click {
+  color: #b4b4b4;
+  margin-right: 12px;
+}
+.HomeListContent .ListItem .title {
+  font-size: 16px;
+  font-family: "微软雅黑";
+  max-width: 360px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.HomeListContent .ListItem .time {
+  float: right;
+  color: #b4b4b4;
 }

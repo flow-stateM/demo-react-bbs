@@ -13,6 +13,10 @@ input{
     background-color: transparent;
     border: none;
 }
+dfn{
+    font-style: normal;
+}
+
 //工具 tools
 .fl{
     float: left;
@@ -81,10 +85,11 @@ input{
 .mainContainer{
     background-color: #e1e1e1;
     padding: 15px 0 ;
-    min-width: 1000px;
+    min-width: 1080px;
 }
 .main{
-    max-width: 980px;
+    width: 90%;
+    min-width: 980px;
     margin: 0 auto;
     .HomeList{
         .fl;
@@ -126,15 +131,60 @@ input{
     background-color: #fff;
     min-height: 500px;
     .ListItem{
-        border-bottom: 1px solid black;
+        border-bottom: 1px solid #f0f0f0;
         width: 100%;
         height: 50px;
         line-height: 50px;
+        box-sizing: border-box;
+        padding-right: 10px;
+        .listNum{
+            display: inline-block;
+            .fl;
+            vertical-align: top;
+            line-height: 50px;
+            text-align: center;
+            width: 100px;
+            overflow: hidden;
+            white-space: nowrap;
+            height: 50px;
+            span{
+                float: none;
+            }
+        }
+        img{
+            width: 30px;
+            height: 30px;
+            border-radius: 3px;
+            border: none;
+            vertical-align: middle;
+            margin-left: 10px;
+            margin-right: 10px;
+        }
         span{
             display: inline-block;
             height: 50px;
             line-height: 50px;
-            font-size: 20px;
+            font-size: 14px;
+            vertical-align: top;
+            .fl;
+            cursor: default;
+        }
+        .click{
+            color: #b4b4b4;
+            margin-right: 12px;
+        }
+        .title{
+            font-size: 16px;
+            font-family: "微软雅黑";
+            max-width: 360px;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+        }
+        .time{
+            .fr;
+            color: #b4b4b4;
+
         }
 
         

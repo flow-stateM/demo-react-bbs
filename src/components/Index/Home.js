@@ -14,7 +14,6 @@ import Adv from './HomeList/Adv'
 
      class Home extends Component {
         render(){
-            // matchFn(this.props.match);
             return(
                 <div className='index'>
                     <NavBar />
