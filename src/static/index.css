@@ -79,6 +79,26 @@ dfn {
 .navBox .navContainer .searchInp.active {
   background-color: #fff;
 }
+.back {
+  position: fixed;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  height: 100px;
+  width: 35px;
+  background-color: #fff;
+  text-align: center;
+  line-height: 35px;
+  border-radius: 15px 0 0 15px;
+  cursor: pointer;
+  color: #8a8888;
+  border: 1px solid #b4b4b4;
+  border-right: none;
+  writing-mode: vertical-lr;
+}
+.back.none {
+  display: none;
+}
 .mainContainer {
   background-color: #e1e1e1;
   padding: 15px 0 ;
@@ -87,11 +107,12 @@ dfn {
 .main {
   width: 90%;
   min-width: 980px;
+  max-width: 1400px;
   margin: 0 auto;
 }
 .main .HomeList {
   float: left;
-  width: 655px;
+  width: 68%;
   margin-right: 15px;
 }
 .main .HomeList .HomeListHeader {
@@ -104,7 +125,8 @@ dfn {
   line-height: 20px;
 }
 .main .Adv {
-  float: left;
+  width: 30%;
+  float: right;
   width: 290px;
   background-color: darkcyan;
   height: 500px;
@@ -133,6 +155,9 @@ dfn {
   line-height: 50px;
   box-sizing: border-box;
   padding-right: 10px;
+}
+.HomeListContent .ListItem .imgContainer {
+  width: 50px;
 }
 .HomeListContent .ListItem .listNum {
   display: inline-block;
@@ -173,12 +198,21 @@ dfn {
 .HomeListContent .ListItem .title {
   font-size: 16px;
   font-family: "微软雅黑";
-  max-width: 360px;
+  max-width: 60%;
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
 }
+.HomeListContent .ListItem .title:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
 .HomeListContent .ListItem .time {
   float: right;
   color: #b4b4b4;
+}
+.footer {
+  height: 50px;
+  text-align: center;
+  line-height: 50px;
 }

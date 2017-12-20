@@ -13,11 +13,9 @@ import {matchFn} from '../../../redux/match.redux';
             this.props.matchFn(this.props.match.url.substring(1));
         }
         render(){
-            console.log(this.props.data)
             const newData = this.props.data?this.props.data.data.data.map((item)=>{
                 return <ListItem {...item} key={item.id}/>
             }):'';
-            console.log(newData)
             return(<div className="HomeListContent">
                 {newData}
             </div>)

@@ -1,7 +1,9 @@
 import React, { Component } from 'react';
 import NavBar from '../Public/NavBar';
 import HomeList from './HomeList/HomeList';
-import Adv from './HomeList/Adv'
+import Adv from './HomeList/Adv';
+import BackTop from '../Public/BackTop';
+import Footer from '../Public/Footer'
 // import {connect} from 'react-redux';
 // import {matchFn} from '../../redux/index.redux';
 
@@ -23,6 +25,8 @@ import Adv from './HomeList/Adv'
                             <Adv />
                         </div>
                     </div>
+                    <BackTop />
+                    <Footer />
                 </div>
             )
         }

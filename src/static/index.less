@@ -81,6 +81,28 @@ dfn{
     }
 }
 
+//回到顶部
+.back{
+    position: fixed;
+    right: 0;
+    top: 50%;
+    transform:translateY(-50%);
+    height: 100px;
+    width: 35px;
+    background-color: #fff;
+    text-align: center;
+    line-height: 35px;
+    border-radius: 15px 0 0 15px;
+    cursor: pointer;
+    color:#8a8888;
+    border: 1px solid #b4b4b4;
+    border-right: none;
+    writing-mode:vertical-lr;
+    &.none{
+        display: none;
+    }
+}
+
 //main 内容区  HomeList、登陆和ADV广告区
 .mainContainer{
     background-color: #e1e1e1;
@@ -90,10 +112,11 @@ dfn{
 .main{
     width: 90%;
     min-width: 980px;
+    max-width: 1400px;
     margin: 0 auto;
     .HomeList{
         .fl;
-        width: 655px;
+        width: 68%;
         margin-right: 15px;
         .HomeListHeader{
             background-color: #f6f6f6;
@@ -106,7 +129,8 @@ dfn{
         }
     }
     .Adv{
-        .fl;
+        width: 30%;
+        .fr;
         width: 290px;
         background-color: darkcyan;
         height: 500px;
@@ -137,6 +161,9 @@ dfn{
         line-height: 50px;
         box-sizing: border-box;
         padding-right: 10px;
+        .imgContainer{
+            width: 50px;
+        }
         .listNum{
             display: inline-block;
             .fl;
@@ -176,10 +203,15 @@ dfn{
         .title{
             font-size: 16px;
             font-family: "微软雅黑";
-            max-width: 360px;
+            // width: 50%;
+            max-width: 60%;
             overflow: hidden;
             text-overflow: ellipsis;
             white-space: nowrap;
+            &:hover{
+                text-decoration: underline;
+                cursor: pointer;
+            }
         }
         .time{
             .fr;
@@ -190,3 +222,14 @@ dfn{
         
     }
 }
+
+
+
+
+//footer
+.footer{
+    height: 50px;
+    text-align: center;
+    line-height: 50px;
+}
+

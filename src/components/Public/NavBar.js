@@ -19,7 +19,7 @@ import {Link} from 'react-router-dom'
         }
         render(){
             return(
-                <nav className='navBox clear'>
+                <nav id="top" className='navBox clear'>
                     <div className='navContainer fl'>
                         <Link to='/'><img src={require('../../static/images/logo.png')} alt=''/></Link>
                         <input className='searchInp' value={this.state.searchVal} onFocus={(e)=>{e.target.classList.toggle('active')}} onChange={this.handleChangeInp} onBlur={(e)=>{e.target.classList.toggle('active')}}  type='text'  />
